@@ -56,8 +56,8 @@ Para desplegar este aplicativo localmente , sigue estos pasos:
    Clona el repositorio desde GitHub o donde se encuentre alojado.
 
    ```
-   git clone <url-del-repositorio>
-   cd <nombre-del-proyecto>
+   git clone https://github.com/MarvoloV/vuelos-app
+   cd vuelos-app
    ```
 
 2. **Instalar Dependencias:**
@@ -127,3 +127,6 @@ src
 └── README.md
 
 ```
+##PROYECTO DESPLEGADO
+
+https://github.com/MarvoloV/vuelos-app
