@@ -13,6 +13,5 @@ export default async function ResultPage({
     date as string,
   );
 
-  console.warn("DEBUGPRINT[6]: page.tsx:10: listResults=", listResults);
   return <ResultsContainer trips={listResults} />;
 }

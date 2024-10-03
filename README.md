@@ -98,6 +98,8 @@ Cuando se realizan peticiones de vuelos o pagos, la interfaz actual no muestra u
 - **Loader para Búsquedas de Vuelos**: Mostrar un componente de carga (loader) mientras se realiza la búsqueda de vuelos, especialmente si la petición tarda más de lo esperado debido a la cantidad de datos o la latencia de la red.
 - **Loader para Procesamiento de Pagos**: Incluir un indicador de carga durante el procesamiento del pago para evitar que los usuarios intenten realizar múltiples pagos o se confundan acerca del estado de la transacción.
 
+### 4. Mejorar el diseño responsive de algunos componentes
+
 ### Estructura de Carpetas
 
 ```plaintext
@@ -127,6 +129,7 @@ src
 └── README.md
 
 ```
+
 ##PROYECTO DESPLEGADO
 
-https://github.com/MarvoloV/vuelos-app
+https://vuelos-app-delta.vercel.app/

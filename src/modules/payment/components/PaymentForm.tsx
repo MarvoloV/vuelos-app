@@ -62,7 +62,7 @@ export const PaymentForm = () => {
           <h1 className="text-3xl font-bold mb-8">Pagar y confirmar reserva</h1>
 
           <div className="grid grid-cols-3 gap-8">
-            <div className="col-span-2 space-y-8">
+            <div className="col-span-3 md:col-span-2 space-y-8">
               <CardSection title="Datos de la tarjeta">
                 <div className="mt-8 space-y-6">
                   <PaymentField
@@ -151,12 +151,14 @@ export const PaymentForm = () => {
               </Button>
             </div>
 
-            <CardSection title="Resumen de compra">
+            <CardSection title="Resumen de compra" className="hidden md:block">
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold">Ida</h3>
                   <div className="flex justify-between items-center">
-                    <span>{selectTrip.origin} a {selectTrip.destination}</span>
+                    <span>
+                      {selectTrip.origin} a {selectTrip.destination}
+                    </span>
                     <span className="text-xs px-2 py-1 bg-blue-100 text-blue-600 rounded-md">
                       {selectTrip.quantity} pasajero
                     </span>

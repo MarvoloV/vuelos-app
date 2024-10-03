@@ -9,14 +9,16 @@ import {
 interface CardSectionProps {
   title: string;
   children: React.ReactNode;
+  className?: string;
 }
 
 export const CardSection: React.FC<CardSectionProps> = ({
   title,
   children,
+  className,
 }) => {
   return (
-    <Card>
+    <Card className={className}>
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{title}</CardTitle>
       </CardHeader>

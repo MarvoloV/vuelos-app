@@ -25,8 +25,8 @@ export const SearchCard: React.FC<Props> = ({ trip }) => {
     router.push("/booking");
   };
   return (
-    <Card className="col-span-4  px-4 bg-white rounded-lg shadow border-black/20 border py-2">
-      <CardContent className="flex justify-between items-center py-2">
+    <Card className="col-span-4  px-4 bg-white rounded-lg shadow border-black/20 border p-2 md:p-6 py-2">
+      <CardContent className="flex justify-between items-center  p-0 md:p-6 py-2">
         <div className="flex items-center space-x-4">
           <div>
             <h3 className="font-semibold">{trip.origin}</h3>

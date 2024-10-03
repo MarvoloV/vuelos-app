@@ -34,7 +34,6 @@ export const PaymentField: React.FC<PaymentFieldProps> = ({
     field: any,
   ) => {
     const { value } = event.target;
-    console.warn("DEBUGPRINT[1]: PaymentField.tsx:35: value=", value);
 
     if (format === "validThru") {
       const cleanedValue = value.replace(/\D/g, "");

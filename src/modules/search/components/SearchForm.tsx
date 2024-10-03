@@ -54,7 +54,7 @@ export const SearchForm: React.FC = () => {
     <Card className="bg-white/80 backdrop-blur-sm shadow-lg border-black/40">
       <CardContent className="p-6">
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap md:flex-nowrap">
             <AirportSelect
               icon={PlaneTakeoff}
               options={airports}
