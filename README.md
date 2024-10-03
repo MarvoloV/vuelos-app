@@ -74,24 +74,29 @@ Para desplegar este aplicativo localmente , sigue estos pasos:
    ```
    npm run dev
    ```
+
 ## Mejoras Futuras
 
 A continuación, se presentan algunas áreas que se pueden mejorar en la aplicación:
 
 ### 1. Mejora de Mocks de Vuelos
+
 Actualmente, los datos de vuelos están simulados con un conjunto estático de información. Algunas posibles mejoras incluyen:
 
 ### 2. Validaciones de Tarjetas de Pago
+
 Actualmente, la validación de las tarjetas de pago es básica. Aquí hay mejoras sugeridas:
+
 - **Validación Luhn**: Implementar el algoritmo de Luhn para validar los números de las tarjetas de crédito, asegurando que el formato sea correcto.
 - **Validaciones Adicionales**: Añadir validaciones para fechas de vencimiento, CVV, y compatibilidad con diferentes tipos de tarjetas como Visa, MasterCard, etc.
 - **Manejo de Errores**: Implementar un manejo más robusto de errores para mostrar mensajes claros en caso de que los detalles de la tarjeta no sean válidos.
 
 ### 3. Implementación de un Loader
+
 Cuando se realizan peticiones de vuelos o pagos, la interfaz actual no muestra un indicador visual de que la solicitud está en proceso. Para mejorar la experiencia del usuario:
+
 - **Loader para Búsquedas de Vuelos**: Mostrar un componente de carga (loader) mientras se realiza la búsqueda de vuelos, especialmente si la petición tarda más de lo esperado debido a la cantidad de datos o la latencia de la red.
 - **Loader para Procesamiento de Pagos**: Incluir un indicador de carga durante el procesamiento del pago para evitar que los usuarios intenten realizar múltiples pagos o se confundan acerca del estado de la transacción.
-
 
 ### Estructura de Carpetas
 
@@ -107,9 +112,6 @@ src
 |  |  └── sucess
 |  |     └── page.tsx
 |  ├── favicon.ico
-|  ├── fonts
-|  |  ├── GeistMonoVF.woff
-|  |  └── GeistVF.woff
 |  ├── globals.css
 |  ├── layout.tsx
 |  ├── page.tsx
