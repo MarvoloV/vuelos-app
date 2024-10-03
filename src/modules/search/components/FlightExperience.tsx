@@ -42,7 +42,7 @@ export const FlightExperience = () => {
         {experiences.map((feature) => (
           <Card
             key={feature.title}
-            className="overflow-hidden relative shadow-lg border-black/30"
+            className="overflow-hidden relative shadow-lg border-black/30 hover:cursor-pointer"
           >
             <img
               src={feature.image}

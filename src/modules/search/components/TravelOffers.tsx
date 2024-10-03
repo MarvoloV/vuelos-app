@@ -37,7 +37,7 @@ export const TravelOffers = () => {
         {offers.map((destination) => (
           <Card
             key={destination.name}
-            className="overflow-hidden relative border-black/30"
+            className="overflow-hidden relative border-black/30 hover:cursor-pointer"
           >
             <img
               src={destination.image}

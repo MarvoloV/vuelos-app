@@ -16,10 +16,15 @@ import {
 } from "@/modules/shared/components/ui/form";
 import { CardSection } from "./CardSection";
 import { PaymentField } from "./PaymentField";
+import { useBookingStore } from "@/modules/shared/store/BookingStore";
+import { Booking } from "@/modules/shared/interfaces";
 
 type PaymentFormSchemaType = z.infer<typeof ZPaymentFormSchema>;
 
 export const PaymentForm = () => {
+  const selectTrip = useBookingStore(
+    (state) => state.selectedBooking,
+  ) as Booking;
   const router = useRouter();
   const form = useForm<PaymentFormSchemaType>({
     resolver: zodResolver(ZPaymentFormSchema),
@@ -151,9 +156,9 @@ export const PaymentForm = () => {
                 <div>
                   <h3 className="font-semibold">Ida</h3>
                   <div className="flex justify-between items-center">
-                    <span>Lima a Armenia</span>
+                    <span>{selectTrip.origin} a {selectTrip.destination}</span>
                     <span className="text-xs px-2 py-1 bg-blue-100 text-blue-600 rounded-md">
-                      1 pasajero
+                      {selectTrip.quantity} pasajero
                     </span>
                   </div>
                 </div>
